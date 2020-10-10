@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Welcome {{ user }}</h1>
+    <router-link to="/invoices">My invoices</router-link>
     <button @click="logOut">log out</button>
   </div>
 </template>

@@ -48,6 +48,12 @@ const routes = [
     component: () => import('../views/Login.vue')
   },
   {
+    path: '/invoices',
+    name: 'Invoices',
+    component: () => import('../views/Invoices.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
     path: '/404',
     alias: '*',
     name: 'NotFound',
@@ -72,9 +78,13 @@ const router = new VueRouter({
   routes
 })
 
+// auth middleware
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth) && !store.user) {
-    return next({ name: 'Login' })
+    return next({
+      name: 'Login',
+      query: { redirect: to.path }
+    })
   }
 
   next()
