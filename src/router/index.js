@@ -13,22 +13,22 @@ const routes = [
   {
     path: '/brazil',
     name: 'Brazil',
-    component: () => import('../views/Brazil')
+    component: () => import('../views/Brazil.vue')
   },
   {
     path: '/jamaica',
     name: 'Jamaica',
-    component: () => import('../views/Jamaica')
+    component: () => import('../views/Jamaica.vue')
   },
   {
     path: '/hawaii',
     name: 'Hawaii',
-    component: () => import('../views/Hawaii')
+    component: () => import('../views/Hawaii.vue')
   },
   {
     path: '/panama',
     name: 'Panama',
-    component: () => import('../views/Panama')
+    component: () => import('../views/Panama.vue')
   }
   // {
   //   path: '/about',
