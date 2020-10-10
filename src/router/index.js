@@ -11,38 +11,10 @@ const routes = [
     component: Home
   },
   {
-    path: '/brazil',
-    name: 'Brazil',
-    component: () => import('../views/Brazil.vue')
-  },
-  {
-    path: '/jamaica',
-    name: 'Jamaica',
-    component: () => import('../views/Jamaica.vue')
-  },
-  {
-    path: '/hawaii',
-    name: 'Hawaii',
-    component: () => import('../views/Hawaii.vue')
-  },
-  {
-    path: '/panama',
-    name: 'Panama',
-    component: () => import('../views/Panama.vue')
-  },
-  {
     path: '/details/:id',
     name: 'DestinationDetail',
     component: () => import('../views/DestinationDetail.vue')
   }
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  // }
 ]
 
 const router = new VueRouter({
