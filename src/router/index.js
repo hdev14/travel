@@ -1,10 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Brazil from '../views/Brazil'
-import Jamaica from '../views/Jamaica'
-import Hawaii from '../views/Hawaii'
-import Panama from '../views/Panama'
 
 Vue.use(VueRouter)
 
@@ -17,22 +13,22 @@ const routes = [
   {
     path: '/brazil',
     name: 'Brazil',
-    component: Brazil
+    component: () => import('../views/Brazil')
   },
   {
     path: '/jamaica',
     name: 'Jamaica',
-    component: Jamaica
+    component: () => import('../views/Jamaica')
   },
   {
     path: '/hawaii',
     name: 'Hawaii',
-    component: Hawaii
+    component: () => import('../views/Hawaii')
   },
   {
     path: '/panama',
     name: 'Panama',
-    component: Panama
+    component: () => import('../views/Panama')
   }
   // {
   //   path: '/about',
