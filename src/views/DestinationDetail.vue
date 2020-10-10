@@ -13,11 +13,17 @@ import store from '@/store'
 
 export default {
   data () {
-    return { destinationId: this.$route.params.id }
+    return { }
+  },
+  props: {
+    slug: {
+      type: String,
+      require: true
+    }
   },
   computed: {
     destination () {
-      return store.destinations.find(d => d.id === this.destinationId)
+      return store.destinations.find(d => d.slug === this.slug)
     }
   }
 }
