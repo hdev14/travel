@@ -1,6 +1,5 @@
 <template>
   <section>
-    <h1>Experiences</h1>
     <h2>{{experience.name}}</h2>
     <div class="experience-details">
       <img :src="require(`@/assets/${experience.image}`)" :alt="experience.name">
@@ -29,5 +28,7 @@ export default {
 </script>
 
 <style scoped>
-
+.experience-details {
+  padding: 40px 0;
+}
 </style>

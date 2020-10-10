@@ -32,6 +32,12 @@ export default {
 #nav {
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border: 1px solid gray;
+  z-index: 1;
 }
 
 #nav a {
