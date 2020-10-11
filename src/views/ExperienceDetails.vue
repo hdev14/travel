@@ -28,7 +28,5 @@ export default {
 </script>
 
 <style scoped>
-.experience-details {
-  padding: 40px 0;
-}
+
 </style>

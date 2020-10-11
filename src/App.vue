@@ -16,6 +16,7 @@ export default {
   }
 }
 </script>
+
 <style>
 * {
   padding: 0;
@@ -24,12 +25,19 @@ export default {
   box-sizing: border-box;
 }
 
+:root {
+  --black: #333;
+  --green: #42b983;
+  --white: #d6ffec;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: var(--black);
+  background-color: var(--white);
 }
 
 .fade-enter-active,
@@ -41,5 +49,4 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
-
 </style>

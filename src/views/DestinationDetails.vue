@@ -64,49 +64,5 @@ export default {
 </script>
 
 <style scoped>
-img {
-  min-width: 400px;
-  height: auto;
-}
 
-.destination-details {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-
-p {
-  margin: 0 40px;
-  font-size: 20px;
-  text-align: left;
-}
-
-.experiences {
-  padding: 40px 0;
-}
-
-.cards {
-  display: flex;
-}
-
-.cards img {
-  max-width: 200px;
-  max-height: 200px;
-}
-
-.card {
-  padding: 0 20px;
-  position: relative;
-}
-
-.card__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 25px;
-  font-weight: bold;
-  text-decoration: none;
-}
 </style>

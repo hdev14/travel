@@ -1,22 +1,19 @@
 <template>
   <nav id="nav">
-    <p>Travel</p>
+    <router-link to="/" id="home">
+      <h1>Travel</h1>
+    </router-link>
+
     <ul class="nav-links">
       <li class="links">
-        <router-link to="/">
-          Home
+        <router-link to="/user">
+          Dashboard
         </router-link>
       </li>
 
       <li v-for="destination in destinations" :key="destination.name" class="links">
         <router-link :to="{ name: 'DestinationDetails', params: { slug: destination.slug }}">
           {{ destination.name }}
-        </router-link>
-      </li>
-
-      <li class="links">
-        <router-link to="/user">
-          Dashboard
         </router-link>
       </li>
     </ul>
@@ -34,45 +31,48 @@ export default {
   }
 }
 </script>
+
 <style scoped>
 #nav {
+  padding: 0 10%;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
+  z-index: 1;
   position: sticky;
   top: 0;
   left: 0;
-  background-color: white;
-  border: 1px solid gray;
-  z-index: 1;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+#nav #home {
   text-decoration: none;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+  font-size: 1.5rem;
+  margin-right: 30px;
+  color: var(--green);
 }
 
 .nav-links {
+  flex: 1;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   list-style: none;
 }
 
 .links {
-  padding-right: 20px;
+  margin: 0 auto;
 }
 
-.links:hover {
-  text-decoration: underline;
-}
-
-.logo {
-  font-size: 20px;
-  color: purple;
+.links a {
+  text-decoration: none;
   font-weight: bold;
+  color: var(--black);
+  transition: color .2s ease-in;
 }
 
+.links a:hover {
+  color: var(--green);
+}
 </style>

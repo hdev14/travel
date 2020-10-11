@@ -31,20 +31,5 @@ export default {
 </script>
 
 <style scoped>
-.home {
-  padding: 0 10%;
-}
 
-.home h2 {
-  margin: 20px auto;
-}
-
-img {
-  max-width: 200px;
-}
-
-.destinations {
-  display: flex;
-  justify-content: space-between;
-}
 </style>
