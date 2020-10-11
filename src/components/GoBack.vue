@@ -26,5 +26,6 @@ button {
   background-color: transparent;
   font-size: 1rem;
   color: var(--green);
+  cursor: pointer;
 }
 </style>
