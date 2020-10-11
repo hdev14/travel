@@ -23,3 +23,33 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+h1 {
+  margin-top: 100px;
+  text-transform: capitalize;
+}
+
+a {
+  display: block;
+  margin: 50px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--green);
+  text-transform: capitalize;
+}
+
+button {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+
+  border: 0;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  color: tomato;
+  cursor: pointer;
+}
+</style>
