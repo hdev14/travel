@@ -28,7 +28,7 @@ export default {
 :root {
   --black: #333;
   --green: #42b983;
-  --white: #d6ffec;
+  --white: #fefefe;
 }
 
 #app {
