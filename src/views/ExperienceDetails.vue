@@ -29,4 +29,34 @@ export default {
 
 <style scoped>
 
+section {
+  padding: 40px 0;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin: 30px 0;
+  color: var(--green);
+}
+
+section div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+section div img {
+  width: auto;
+  height: 100%;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+
+section div p {
+  max-width: 700px;
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
 </style>
